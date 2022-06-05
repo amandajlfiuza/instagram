@@ -67,6 +67,11 @@ body {
     font-size: 22px;
 }
 
+/*(1.1) Barra fixa superior - apenas mobile*/
+.menu-mobile {
+    display: none;
+}
+
 /*(2) Todo o conteúdo da página*/
 .conteudo {
     width: 935px;
@@ -353,25 +358,16 @@ em {
 
 /*Responsivo Mobile < 614px*/
 @media (max-width: 613px) {
-    .linha-vertical {
-        display: none;
-    }
-    .pesquisar {
-        display: none;
-    }
-    .icon {
-        display: none;
-    }
-    .icones-esquerda {
-        width: 57.5856vw;
-    }
-    .icones-direita {
-        width: 42.4144vw;
-        justify-content: flex-end;
-    }
     .menu {
+        display: none;
+    }
+    .menu-mobile {
         width: 95vw;
+        height: 54px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .conteudo {
         width: 100%;
