@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    cursor: pointer;
+}
+body {
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*(1) Barra fixa superior*/
+.topo {
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DBDBDB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.menu {
+    width: 935px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+.icones-esquerda {
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon {
+    font-size: 22px;
+}
+.icon-insta {
+    font-size: 22px;
+}
+.linha-vertical {
+    height: 22px;
+    border-right: 1px solid #DBDBDB;
+}
+.logo {
+    width: 103px;
+}
+.barra-de-pesquisa {
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    color: #979797;
+
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+.icones-direita {
+    width: 146px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-paper-plane {
+    font-size: 22px;
+}
+
+/*(2) Todo o conteúdo da página*/
+.conteudo {
+    width: 935px;
+    margin: 88px auto 34px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*(2.1) Stories + Feed*/
+.publicacoes {
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*(2.1.1) Stories*/
+.caixa-de-stories {
+    height: 118px;
+    margin-bottom: 24px;
+    padding-top: 16px;
+    padding-right: 0px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    display: flex;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.story {
+    width: 66px;
+    height: 100%;
+    margin-right: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.stories-background {
+    width: 66px;
+    border-radius: 50%;
+}
+.foto-de-perfil {
+    width: 56px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.nome-do-perfil {
+    width: 58px;
+    height: 19px;
+    font-size: 12px;
+    line-height: 14.06px;
+    font-weight: 400;
+    margin-top: 4px;
+    color: #262626;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.seta {
+    color: #FFFFFF;
+    font-size: 32px;
+    filter: drop-shadow(#868686 0px 4px 4px);
+    z-index: 5;
+    position: absolute;
+    top: 43px;
+    right: 6px;
+}
+
+/*(2.1.2) Feed*/
+.caixa-de-post {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+.topo-post {
+    width: 94.46%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topo-post-esquerda {
+    display: flex;
+    align-items: center;
+}
+.topo-post-esquerda img {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.topo-post-esquerda p {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+}
+.imagem-post img {
+    width: 100%;
+    border-top: 1px solid #EFEFEF;
+}
+.engajamento {
+    width: 94.46%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.ccc {
+    width: 22px;
+    height: 22px;
+}
+.curtir-comentar-compartilhar {
+    width: 93px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-salvar {
+    font-size: 17.88px;
+}
+.curtidas {
+    width: 94.46%;
+    display: flex;
+    align-items: center;
+}
+.curtidas img {
+    width: 20px;
+    border-radius: 50%;
+    margin: 10px 5px 14px 0;
+}
+.curtidas p {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px
+}
+em {
+    font-weight: 500;
+}
+
+/*(2.2) Barra fixa lateral*/
+.sidebar {
+    width: 293px;
+    position: fixed;
+    top: 111px;
+    left: 857px;
+}
+.perfil {
+    height: 56px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.perfil img {
+    border-radius: 50%;
+    margin-right: 17px;
+}
+.perfil-texto {
+    display: flex;
+    flex-direction: column;
+}
+.perfil-texto h1 {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+}
+.perfil-texto h2 {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.41px;
+}
+.texto-sugestoes {
+    height: 15px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.texto-sugestoes h2 {
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+}
+.texto-sugestoes h1 {
+    color: #262626;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+}
+.sugestoes {
+    height: 224px;
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sugestoes div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contas-para-seguir {
+    display: flex;
+}
+.contas-para-seguir img {
+    border-radius: 50%;
+    margin-right: 11px;
+}
+.contas-texto {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contas-texto h1 {
+    color: #262626;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+}
+.contas-texto h2 {
+    color: #8E8E8E;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+}
+.botao-seguir {
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+}
+.classificacoes-explorar {
+    margin-bottom: 18px;
+}
+.classificacoes-explorar p {
+    color: #C7C7C7;
+    font-size: 11px;
+    line-height: 12.89px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+.explorar:hover {
+    text-decoration: underline;
+}
+.direitos-autorais p {
+    color: #C7C7C7;
+    font-size: 11px;
+    line-height: 12.89px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+/*(3) Barra fixa inferior - apenas mobile*/
+.barra-inferior {
+    display: none;
+}
+
+/*Responsivo Desktop < 935px*/
+@media (max-width: 934px) {
+    .sidebar {
+        display: none;
+    }
+    .menu {
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .conteudo {
+        width: 100%;
+        margin: 88px auto 34px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Responsivo Mobile < 614px*/
+@media (max-width: 613px) {
+    .linha-vertical {
+        display: none;
+    }
+    .pesquisar {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .icones-esquerda {
+        width: 57.5856vw;
+    }
+    .icones-direita {
+        width: 42.4144vw;
+        justify-content: flex-end;
+    }
+    .menu {
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .conteudo {
+        width: 100%;
+        margin: 54px 0 60px 0;
+    }
+    .publicacoes {
+        width: 100vw;
+    }
+    .caixa-de-stories {
+        width: 100vw;
+        background-color: #FAFAFA;
+        border: none;
+        margin: 0;
+    }
+    .seta-stories {
+        display: none;
+    }
+    .barra-inferior {
+        width: 100vw;
+        height: 54px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .icon-inferior {
+        width: 22px;
+        height: 22px;
+    }
+}

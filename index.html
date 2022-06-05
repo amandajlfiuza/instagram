@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Instagram</title>
+</head>
+<body>
+    <!--(1) Barra fixa superior-->
+    <div class="topo">
+        <div class="menu">
+            <div class="icones-esquerda">
+                <a><ion-icon name="logo-instagram" class="icon-insta"></ion-icon></a>
+                <div class="linha-vertical"></div>
+                <a><img src="./arquivos-uteis/logo.png" class="logo"/></a>
+            </div>
+            <div class="pesquisar">
+                <input type="text" placeholder="Pesquisar" class="barra-de-pesquisa"/>
+            </div>
+            <div class="icones-direita">
+                <a><ion-icon name="paper-plane-outline" class="icon-paper-plane"></ion-icon></a>
+                <a><ion-icon name="compass-outline" class="icon"></ion-icon></a>
+                <a><ion-icon name="heart-outline" class="icon"></ion-icon></a>
+                <a><ion-icon name="person-outline" class="icon"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+
+    <!--(2) Todo o conteúdo da página, desde os stories até a sidebar-->
+    <div class="conteudo">
+
+        <!--(2.1) Stories + Feed-->
+        <div class="publicacoes">
+
+            <div class="caixa-de-stories">
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/9gag 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">9gag</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/meowed 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">meowed</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/barked 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">barked</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/nathanwpylestrangeplanet 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">nathanwpylestrangeplanet</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/wawawiwacomicsa 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">wawawiwacomicsa</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/respondeai 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">respondeai</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/filomoderna 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">filomoderna</p>
+                </div></a>
+                <a><div class="story">
+                    <img src="./arquivos-uteis/stories_background.png" class="stories-background"/>
+                    <img src="./imagens/memeriagourmet 1.png" class="foto-de-perfil" />
+                    <p class="nome-do-perfil">memeriagourmet</p>
+                </div></a>
+                <a><div class="seta-stories">
+                    <ion-icon name="chevron-forward-circle" class="seta"></ion-icon>
+                </div></a>
+            </div>
+
+            <div class="feed">
+                <div class="caixa-de-post">
+                        <div class="topo-post">
+                            <a><div class="topo-post-esquerda">
+                                <img src="./imagens/meowed 1.png" />
+                                <p>meowed</p>
+                            </div></a>
+                            <a><div class="topo-post-direita">
+                                <ion-icon name="ellipsis-horizontal"></ion-icon>
+                            </div></a>
+                        </div>
+                        <div class="imagem-post">
+                            <img src="./imagens/gato-telefone 1.png" />
+                        </div>
+                        <div class="engajamento">
+                            <div class="curtir-comentar-compartilhar">
+                                <a><ion-icon name="heart-outline" class="ccc"></ion-icon></a>
+                                <a><ion-icon name="chatbubble-outline" class="ccc"></ion-icon></a>
+                                <a><ion-icon name="paper-plane-outline" class="ccc"></ion-icon></a>
+                            </div>
+                            <div class="salvar">
+                                <a><ion-icon name="bookmark-outline" class="icon-salvar"></ion-icon></a>
+                            </div>
+                        </div>
+                    <div class="curtidas">
+                        <a><img src="./imagens/respondeai 1.png" /></a>
+                        <p>Curtido por <a><em>respondeai</em></a> e <a><em>outras 101.523 pessoas</em></a></p>
+                    </div>
+                </div>
+
+                <div class="caixa-de-post">
+                    <div class="topo-post">
+                        <a><div class="topo-post-esquerda">
+                            <img src="./imagens/barked 1.png" />
+                            <p>barked</p>
+                        </div></a>
+                        <a><div class="topo-post-direita">
+                            <ion-icon name="ellipsis-horizontal-outline" class="reticencias"></ion-icon>
+                        </div></a>
+                    </div>
+                    <div class="imagem-post">
+                        <img src="./imagens/dog 1.png" />
+                    </div>
+                    <div class="engajamento">
+                        <div class="curtir-comentar-compartilhar">
+                            <a><ion-icon name="heart-outline" class="ccc"></ion-icon></a>
+                            <a><ion-icon name="chatbubble-outline" class="ccc"></ion-icon></a>
+                            <a><ion-icon name="paper-plane-outline" class="ccc"></ion-icon></a>
+                        </div>
+                        <div class="salvar">
+                            <a><ion-icon name="bookmark-outline" class="icon-salvar"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="curtidas">
+                        <a><img src="./imagens/adorableanimals 1.png" /></a>
+                        <p>Curtido por <a><em>adorableanimals</em></a> e <a><em>outras 99.159 pessoas</em></a></p>
+                    </div>
+                </div>
+
+                <div class="caixa-de-post">
+                    <div class="topo-post">
+                        <a><div class="topo-post-esquerda">
+                            <img src="./imagens/meowed 1.png" />
+                            <p>meowed</p>
+                        </div></a>
+                        <a><div class="topo-post-direita">
+                            <ion-icon name="ellipsis-horizontal-outline" class="reticencias"></ion-icon>
+                        </div></a>
+                    </div>
+                    <div class="imagem-post">
+                        <img src="./imagens/gato-telefone 1.png" />
+                    </div>
+                    <div class="engajamento">
+                        <div class="curtir-comentar-compartilhar">
+                            <a><ion-icon name="heart-outline" class="ccc"></ion-icon></a>
+                            <a><ion-icon name="chatbubble-outline" class="ccc"></ion-icon></a>
+                            <a><ion-icon name="paper-plane-outline" class="ccc"></ion-icon></a>
+                        </div>
+                        <div class="salvar">
+                            <a><ion-icon name="bookmark-outline" class="icon-salvar"></ion-icon></a>
+                        </div>
+                    </div>
+                <div class="curtidas">
+                    <a><img src="./imagens/respondeai 1.png" /></a>
+                    <p>Curtido por <a><em>respondeai</em></a> e <a><em>outras 101.523 pessoas</em></a></p>
+                </div>
+            </div>
+        </div>
+
+        <!--(2.2) Barra fixa lateral-->
+        <div class="sidebar">
+
+            <a><div class="perfil">
+                <img src="./imagens/catanacomics 1.png" />
+                <div class="perfil-texto">
+                    <h1>catanacomics</h1>
+                    <h2>Catana</h2>
+                </div>
+            </div></a>
+
+            <div class="texto-sugestoes">
+                <h2>Sugestões para você</h2>
+                <a><h1>Ver tudo</h1></a>
+            </div>
+
+            <div class="sugestoes">
+                <div>
+                    <a><div class="contas-para-seguir">
+                        <img src="./imagens/badvibesmemes 1.png" />
+                        <div class="contas-texto">
+                            <h1>bad.vibes.memes</h1>
+                            <h2>Segue você</h2>
+                        </div>
+                    </div></a>
+                    <a><div class="botao-seguir">Seguir</div></a>
+                </div>
+                <div>
+                    <a><div class="contas-para-seguir">
+                        <img src="./imagens/chibirdart 1.png" />
+                        <div class="contas-texto">
+                            <h1>chibirdart</h1>
+                            <h2>Segue você</h2>
+                        </div>
+                    </div></a>
+                    <a><div class="botao-seguir">Seguir</div></a>
+                </div>
+                <div>
+                    <a><div class="contas-para-seguir">
+                        <img src="./imagens/razoesparaacreditar 1.png" />
+                        <div class="contas-texto">
+                            <h1>razoesparaacreditar</h1>
+                            <h2>Segue você</h2>
+                        </div>
+                    </div></a>
+                    <a><div class="botao-seguir">Seguir</div></a>
+                </div>
+                <div>
+                    <a><div class="contas-para-seguir">
+                        <img src="./imagens/adorableanimals 1.png" />
+                        <div class="contas-texto">
+                            <h1>adorableanimals</h1>
+                            <h2>Segue você</h2>
+                        </div>
+                    </div></a>
+                    <a><div class="botao-seguir">Seguir</div></a>
+                </div>
+                <div>
+                    <a><div class="contas-para-seguir">
+                        <img src="./imagens/smallcutecats 1.png" />
+                        <div class="contas-texto">
+                            <h1>smallcutecats</h1>
+                            <h2>Segue você</h2>
+                        </div>
+                    </div></a>
+                    <a><div class="botao-seguir">Seguir</div></a>
+                </div>
+            </div>
+
+            <div class="classificacoes-explorar">
+                <p><a class="explorar">Sobre</a> • <a class="explorar">Ajuda</a> • <a class="explorar">Imprensa</a> • <a class="explorar">API</a> • <a class="explorar">Carreiras</a> • <a class="explorar">Privacidade</a> • <a class="explorar">Termos</a> • <a class="explorar">Localizações</a> • <a class="explorar">Contas mais relevantes</a> • <a class="explorar">Hashtags</a> • 
+                <a class="explorar">Idioma</a></p>
+            </div>
+            
+            <div class="direitos-autorais">
+                <p>© 2021 INSTAGRAM DO FACEBOOK</p>
+            </div>
+        </div>
+    </div>
+
+    <!--(3) Barra fixa inferior - apenas mobile-->
+    <div class="barra-inferior">
+        <ion-icon name="home" class="icon-inferior"></ion-icon>
+        <ion-icon name="search-outline" class="icon-inferior"></ion-icon>
+        <ion-icon name="add-circle-outline" class="icon-inferior"></ion-icon>
+        <ion-icon name="heart-outline" class="icon-inferior"></ion-icon>
+        <ion-icon name="person-outline" class="icon-inferior"></ion-icon>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
