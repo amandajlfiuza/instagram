@@ -60,8 +60,10 @@ body {
 }
 .icones-direita {
     width: 146px;
+    height: 54px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .icon-paper-plane {
     font-size: 22px;
